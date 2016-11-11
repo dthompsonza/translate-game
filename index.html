@@ -1,0 +1,424 @@
+<!doctype html>
+<!-- written by David Thompson - thompsdc@gmail.com -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sparks Games - Translation Game</title>
+		<meta name="description" content="A game to translate English to Zulu and vice-versa">
+		<meta name="author" content="David Thompson (thompsdc@gmail.com)">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-L/tgI3wSsbb3f/nW9V6Yqlaw3Gj7mpE56LWrhew/c8MIhAYWZ/FNirA64AVkB5pI" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background-color:transparent;
+			}
+
+			.navbar {
+				margin-bottom: 20px;
+			}
+			.row {
+				padding-bottom: 5px;
+			}
+			h1, h2, h3, h4 {
+				padding-top: 0px;
+				padding-bottom: 0px;
+			}
+			html { 
+			  background: url("http://i.imgur.com/Uwy8J.jpg") no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  background-color: #1c427f;
+			}
+			* {
+				font-family: 'Ek Mukta', sans-serif;
+			}
+			.navbar-brand {
+				font-family: 'Acme', sans-serif;
+			}
+			.loginView .menuView .playView {
+				padding-top: 50px;
+			}
+			.resultGlyph {
+				padding-left: 10px;
+			}
+
+			.resultGlyph.glyphicon-ok {
+				color: #28c60f;
+			}
+			.resultGlyph.glyphicon-remove {
+				color: #c60f1c;
+			}
+			h1.loading {
+				padding-top: 30px;
+				text-align: center;
+				text-indent: -.12em;
+				color: #f4f1de;
+				font: 220px "anchor-web-1","anchor-web-2", 'Impact', sans-serif;
+				font-weight: 900;
+				display: inline-block;
+				margin: 0 auto;
+				line-height: 1;
+				width: 100%;
+				text-shadow: #578be0 .01em .01em 0,
+						#578be0 .02em .02em 0,
+						#578be0 .03em .03em 0,
+						#578be0 .04em .04em 0,
+						#578be0 .05em .05em 0,
+						#578be0 .06em .06em 0,
+						#578be0 .07em .07em 0,			
+						#578be0 .08em .08em 0,
+						#578be0 .09em .09em 0,
+						#578be0 .1em .1em 0;
+			}
+
+			h1.loading span.char4 {
+				letter-spacing: .05em;
+				margin-right: -.107em;
+			}
+			.menuOption {
+				cursor:default;
+			}
+		</style>
+
+
+		<style> /* Sticky footer styles */
+
+			html {
+			  position: relative;
+			  min-height: 100%;
+			}
+			body {
+			  margin-bottom: 30px;
+			}
+			.footer {
+			  position: absolute;
+			  bottom: 0;
+			  width: 100%;
+			  height: 30px;
+			  line-height: 30px; 
+			  background-color: #f5f5f5;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="loadingView">
+			<h1 class="loading" id="myHeader">Loading Internet</h1>
+		</div>
+
+
+		<div class="container">
+			<nav class="navbar navbar-default" style="display: none;">
+		        <div class="container-fluid">
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="?" id="navbarTitle">Word Translation Game</a>
+		          </div>
+		          
+		          <div id="navbar" class="navbar-collapse collapse">
+		            <ul class="nav navbar-nav navbar-right">
+		              <li class="dropdown">
+		                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="navPlayerName">Player Name <!--<span class="caret"></span>--></a>
+		                <!--<ul class="dropdown-menu">
+		                  <li><a onclick="window.open('mailto:KingRider<contato@sandroalvares‌​.com.br>');" style="cursor:default">Email Me</a></li>
+		                </ul> -->
+		              </li>
+
+		            </ul>
+		          </div>
+		          
+		        </div>
+		      </nav>
+
+			<!-- Welcome and username -->
+			<div class="loginView" style="display: none;">
+				
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Welcome - What is your name?</h3>
+							</div>
+							<div class="panel-body">
+
+							    <div class="row"> 
+							    	<div class="col-sm-12 col-md-12 col-lg-12">
+							    		<img src="https://media.giphy.com/media/PdurHkB1QOsMw/giphy.gif" class="img-responsive"/>
+							    	</div>
+							    </div>
+
+							    <div class="row"> 
+							    	&nbsp;
+							    </div>
+
+							    <div class="row"> 
+							    	<div class="col-sm-12 col-md-12 col-lg-12">
+										<div class="input-group">
+									      <input type="text" class="form-control" placeholder="Type your name" name="loginName" id="loginName">
+									      <span class="input-group-btn">
+									        <button class="btn btn-default btnUserLogin" type="button" id="">Go!</button>
+									      </span>
+									    </div>
+								    </div>
+							    </div>
+
+							    <div class="row"> 
+							    	<div class="col-sm-12 col-md-12 col-lg-12">
+							    		<p id="lblWelcomeText">
+							    		</p>
+							    	</div>
+							    </div>
+							
+						  </div>
+						  <div class="panel-footer">
+				                <small class="visible-xs">Extra Small Display</small>
+								<small class="visible-sm">Small Display</small>
+								<small class="visible-md">Medium Display</small>
+								<small class="visible-lg">Large Display</small>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="menuView" style="display: none;">
+				
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title" id="menuTitle">Hello, </h3>
+							</div>
+							<div class="panel-body">
+
+								Choose a game to play
+
+								<ul class="list-group" id="gameMenuOptions">
+									<a class="list-group-item menuOption" onclick="startGame(1);"><span class="glyphicon glyphicon-play" aria-hidden="true" style="padding-right: 10px;"></span>English to Zulu</a>
+									<a class="list-group-item menuOption" onclick="startGame(2);"><span class="glyphicon glyphicon-play" aria-hidden="true" style="padding-right: 10px;"></span>Zulu to English</a>
+								</ul>
+
+								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center><a class="btn btn-info btnNewPlayer" role="button" id="">New Player</a></center>
+  								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="playView" style="display: none;">
+				
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title" id="gameScreenTitle">GAME SCREEN TITLE</h3>
+							</div>
+							<div class="panel-body">
+
+								<div class="row">
+								    <div class="col-sm-12 col-md-12 col-lg-12">
+								    	<div class="text-center">
+								    	<small>Translate this word: </small>
+								    	<h2><span id="sourceWordLabel">SOURCE WORD</span></h2>
+								    	</div>	
+								    </div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-12 col-lg-12">
+								    	<input type="text" class="form-control" placeholder="" name="inputWord" id="inputWord">
+								    </div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-12 col-lg-12">
+								    	<center><a class="btn btn-success btn-lg btnUseWord" role="button" id="">Check It</a></center>
+								    </div>
+								    
+							    </div>
+							    <div class="row">
+							    	<div class="col-sm-12 col-md-12 col-lg-12">
+								    	
+								    </div>
+							    </div>
+								<div class="row">
+									<div class="col-sm-8 col-md-8 col-lg-8">
+								    	<span><small id="triesLeftLabel">You have <span class="badge" id="retriesLeft">X</span> tries left</small></span>
+								    	
+								    </div>
+								    <div class="col-sm-4 col-md-4 col-lg-4">
+								    	<div class="text-right"><a class="btn btn-warning btn-sm btnNewGame" role="button" id="">Quit</a></div>
+								    </div>
+							    </div>
+							    
+						  </div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class="correctWordView" style="display: none;">
+				<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center" id="gameScreenTitle">What is the word?</h3>
+						</div>
+						
+  						<div class="panel-body">
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center>Your word was...</center>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center><h2 id="lblCorrectionSourceWord">SOURCE WORD</h2></center>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center>Your answers were...</center>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center id="lblCorrectionWrongAnswers">
+  										1 - dfkljsdlkfj <br/>
+  										2 - sdfnksn <br/>
+  										3 - d  <br/>
+
+  									</center>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center>The correct answer is...</center>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12 col-md-12 col-lg-12">
+  									<center><h2 id="lblCorrectionAnswer">CORRECT ANSWER</h2></center>
+  								</div>
+  							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+							    	<center><a class="btn btn-success btn-lg btnCorrectionContinue" role="button" id="">Continue</a></center>
+							    </div>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="resultView" style="display: none;">
+				<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title text-center" id="gameScreenTitle">Game Over</h3>
+						</div>
+						
+					  	<table class="table" style="width: 100%;">
+					  		<thead>
+	    						<tr>
+	    							<th>Word</th>
+	    							<th>Answer</th>
+	    							<th>Score</th>
+	    						</tr>
+	    					</thead>
+	    					<tbody id="resultScores">
+	    					</tbody>
+	    					<tfoot id="resultScoresTotal">
+	    					</tfoot>
+  						</table>
+  						<div class="panel-body">
+  							<div class="row">
+  								<div class="col-sm-12 col-md-4 col-lg-4">
+  									<a class="btn btn-success btnPlayAgain" role="button" id="">Play Again</a>
+  								</div>
+  								<div class="col-sm-12 col-md-4 col-lg-4">
+  									<a class="btn btn-primary btnNewGame" role="button" id="">Different Game</a>
+  								</div>
+  								<div class="col-sm-12 col-md-4 col-lg-4">
+  									<a class="btn btn-info btnNewPlayer" role="button" id="">New Player</a>
+  								</div>
+  							</div>
+							<div class="row">
+							    <div class="col-sm-12 col-md-12 col-lg-12">
+ 	
+							    	<img src="https://media.giphy.com/media/3oz8xRAkBdlBdAdCyQ/giphy.gif" class="img-responsive" id="resultWinGraphic" style="display: none" />
+							    	<img src="https://media.giphy.com/media/3oz8xHr6N7AHGs8MSI/giphy.gif" class="img-responsive" id="resultLoseGraphic" style="display: none" />
+							    </div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<center>
+			<!--<img id="gameGiphy" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" class="img-rounded"/>-->
+		</center>
+
+
+		<footer class="footer">
+			<div class="container">
+				<span class="text-muted text-left">
+					Written by <a href="https://za.linkedin.com/in/dthompsonza" target="_blank" style="cursor:default">David Thompson</a> 
+					for Jordan Africa - SPARKS SCHOOL Grade 3 Wild Dogs 
+
+				</span>
+				<span style="float: right;">
+					<img src="data:image/jpeg;base64,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" />
+					
+				</span>
+
+				
+			</div>
+		</footer>
+
+		<!-- hidden resources to be loaded for use later -->
+		
+		<div style="display: none"> 
+			<img src="http://i.imgur.com/Uwy8J.jpg" />
+			<img src='https://media.giphy.com/media/3oz8xPjPPvOwrGjip2/giphy.gif' />
+			<img src="https://media.giphy.com/media/PdurHkB1QOsMw/giphy.gif"/>
+			<img src="https://media.giphy.com/media/l0HlIkUigWdQLaWju/giphy.gif" />
+			<img src="https://media.giphy.com/media/3oz8xRAkBdlBdAdCyQ/giphy.gif" />
+			<img src="https://media.giphy.com/media/3oz8xHr6N7AHGs8MSI/giphy.gif" />
+			<img src="https://media.giphy.com/media/l3vQY67mcKeLsVPzy/giphy.gif" />
+		</div>
+		
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+		<script>jQuery("#myHeader").fitText();</script>
+		<script src="game.js"></script>
+
+		
+	</body>
+</html>

@@ -1,0 +1,1129 @@
+{
+  "version": "1.0",
+  "name": "isiZulu to English",
+  "words": [
+    {
+      "word": "Isikhombisa",
+      "answers": [
+        "Seven",
+        "7"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kuyabanda",
+      "answers": [
+        "It is cold",
+        "cold",
+        "it's cold",
+        "its cold",
+        "it cold"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Dweba",
+      "answers": [
+        "Draw"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ibanga",
+      "answers": [
+        "Grade"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ubusika",
+      "answers": [
+        "Winter"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Izulu linomoya",
+      "answers": [
+        "It is windy",
+        "Its windy",
+        "It's windy",
+        "Windy"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMgqibelo",
+      "answers": [
+        "Saturday",
+        "Sat"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMfumfu",
+      "answers": [
+        "October",
+        "Oct"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ibhande",
+      "answers": [
+        "Belt"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Igama",
+      "answers": [
+        "Name"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umugqa",
+      "answers": [
+        "Line"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ihlobo",
+      "answers": [
+        "Summer"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMasingana",
+      "answers": [
+        "January",
+        "Jan"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uLwezi",
+      "answers": [
+        "November",
+        "Nov"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ibhulukwe",
+      "answers": [
+        "Pants"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isibongo",
+      "answers": [
+        "Surname",
+        "Last name",
+        "Lastname"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Qondise",
+      "answers": [
+        "Straighten"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Intwasahlobo",
+      "answers": [
+        "Spring"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kuyashisa",
+      "answers": [
+        "It is hot",
+        "hot",
+        "it's hot",
+        "its hot",
+        "it hot"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNhlolanja",
+      "answers": [
+        "February",
+        "Feb"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uZibandlela",
+      "answers": [
+        "December",
+        "Dec"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Uthayi",
+      "answers": [
+        "Tie"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Phendula",
+      "answers": [
+        "Answer"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Sithombe",
+      "answers": [
+        "Picture"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ikwindla",
+      "answers": [
+        "Autumn"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Lyana",
+      "answers": [
+        "It is raining",
+        "Its raining",
+        "It raining",
+        "It's raining",
+        "Raining"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNdasa",
+      "answers": [
+        "March",
+        "Mar"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ksasa",
+      "answers": [
+        "Tomorrow"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ihembe",
+      "answers": [
+        "Shirt"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Elandelayo",
+      "answers": [
+        "Following"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umama",
+      "answers": [
+        "Mother",
+        "Mom",
+        "Mum",
+        "Ma"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amagama",
+      "answers": [
+        "Words"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMsombuluko",
+      "answers": [
+        "Monday",
+        "Mon"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMbasa",
+      "answers": [
+        "April",
+        "Apr"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Namhlanje",
+      "answers": [
+        "Today"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isiketi",
+      "answers": [
+        "Skirt"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Thisha",
+      "answers": [
+        "Teacher"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ubaba",
+      "answers": [
+        "Father",
+        "Pa",
+        "Dad"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ngithanda",
+      "answers": [
+        "I Like",
+        "Like"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uLwesibili",
+      "answers": [
+        "Tuesday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNhlaba",
+      "answers": [
+        "May"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Izolo",
+      "answers": [
+        "Yesterday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Obomvu",
+      "answers": [
+        "Red"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Mbuzo",
+      "answers": [
+        "Question"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Izinksuku",
+      "answers": [
+        "Days"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukudlala",
+      "answers": [
+        "Play"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uLwesithathu",
+      "answers": [
+        "Wednesday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNhlangulana",
+      "answers": [
+        "June",
+        "Jun"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isicathulo",
+      "answers": [
+        "Shoe"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Oluhlaza",
+      "answers": [
+        "Green"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Sawubona",
+      "answers": [
+        "Hello",
+        "Hi",
+        "Greetings"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukuphuza",
+      "answers": [
+        "Drink"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukubhukuda",
+      "answers": [
+        "Swim"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uLwesine",
+      "answers": [
+        "Thursday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNtulikazi",
+      "answers": [
+        "July",
+        "Jul"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isigqoko",
+      "answers": [
+        "Hat"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ophuzi",
+      "answers": [
+        "Yellow"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umfundi",
+      "answers": [
+        "Learner",
+        "Student",
+        "Pupil"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukulala",
+      "answers": [
+        "Sleep"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amacembe",
+      "answers": [
+        "Leaves"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uLwesihlanu",
+      "answers": [
+        "Friday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uNcawaba",
+      "answers": [
+        "August",
+        "Aug"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ilokwe",
+      "answers": [
+        "Dress"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Obhulu",
+      "answers": [
+        "Blue"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Sami/Lami",
+      "answers": [
+        "Me"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukudla",
+      "answers": [
+        "Eat"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amanzi",
+      "answers": [
+        "Water"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMgqibelo",
+      "answers": [
+        "Saturday"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "uMandulo",
+      "answers": [
+        "September",
+        "Sep"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ibhantshi",
+      "answers": [
+        "Jacket"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Omhlophe",
+      "answers": [
+        "White"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Omnyama",
+      "answers": [
+        "Black"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ishumi",
+      "answers": [
+        "Ten",
+        "10"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ihlombe",
+      "answers": [
+        "Shoulders"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amagilebhhisi",
+      "answers": [
+        "Grape"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Inhlanzi",
+      "answers": [
+        "Fish"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kunye",
+      "answers": [
+        "One",
+        "1"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ikhanda",
+      "answers": [
+        "Head"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isifuba",
+      "answers": [
+        "Chest"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Uphsyinsphu",
+      "answers": [
+        "Pineapple",
+        "Pine apple"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Inkukhu",
+      "answers": [
+        "Chicken"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kubili",
+      "answers": [
+        "Two",
+        "2"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Iso",
+      "answers": [
+        "Eye"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isandla",
+      "answers": [
+        "Hand"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Iklabisi",
+      "answers": [
+        "Cabbage"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Upholoni",
+      "answers": [
+        "Polony"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kuthathu",
+      "answers": [
+        "Three",
+        "3"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amehlo",
+      "answers": [
+        "Eyes"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Idolo",
+      "answers": [
+        "Knee"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isipinashi",
+      "answers": [
+        "Spinach"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amaqanda",
+      "answers": [
+        "Eggs"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kune",
+      "answers": [
+        "Four",
+        "4"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Indlebe",
+      "answers": [
+        "Ear"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umlenze",
+      "answers": [
+        "Leg"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ithanga",
+      "answers": [
+        "Pumpkin"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isinkwa",
+      "answers": [
+        "Bread"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Kuhlanu",
+      "answers": [
+        "Five",
+        "5"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ikhala",
+      "answers": [
+        "Nose"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Unyawo",
+      "answers": [
+        "Foot"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ukholifulawa",
+      "answers": [
+        "Cauliflower"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ibhotela",
+      "answers": [
+        "Butter"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isithupha",
+      "answers": [
+        "Six",
+        "6"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Izinyo",
+      "answers": [
+        "Tooth"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "I-apula",
+      "answers": [
+        "Apple"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Amazambane",
+      "answers": [
+        "Potatoes"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ushizi",
+      "answers": [
+        "Cheese"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isikhombisa",
+      "answers": [
+        "Seven",
+        "7"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umlimi",
+      "answers": [
+        "Tongue"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Iwolintshi",
+      "answers": [
+        "Orange"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ummbila",
+      "answers": [
+        "Mealie"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ujamu",
+      "answers": [
+        "Jam"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ishiyagalombili",
+      "answers": [
+        "Eight",
+        "8"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Izinwele",
+      "answers": [
+        "Hair"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ubhanana",
+      "answers": [
+        "Banana"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ubhontshisi",
+      "answers": [
+        "ans"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Isishiyagalolunye",
+      "answers": [
+        "Nine",
+        "9"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Umlomo",
+      "answers": [
+        "Mouth"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Ipheya",
+      "answers": [
+        "Pear"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    },
+    {
+      "word": "Inyama",
+      "answers": [
+        "Meat"
+      ],
+      "score": 0,
+      "given": "",
+      "wrongGiven": []
+    }
+  ]
+}
