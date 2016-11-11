@@ -67,6 +67,7 @@ function drawViews(){
 						$("#resultLoseGraphic").show();
 						
 					$(".resultView").show();
+					postScore(gameData);
 				} else {													//still playing
 					$("#navbarTitle").text("Word Translation Game - " + gameData.source.name);
 					$("#gameScreenTitle").text("Word #" + (gameData.gameStep + 1) + " of " + gameData.source.words.length + " words");
@@ -79,6 +80,14 @@ function drawViews(){
 			}
 		}
 	}
+}
+
+function postScore(gameData) {
+	$.ajax({
+	  type: "POST",
+	  url: "http://requestb.in/1au79rm1",
+	  data: gameData
+	});
 }
 
 function setPlayer(name) {
