@@ -85,7 +85,7 @@ function drawViews(){
 function postScore(gameData) {
 	$.ajax({
 	  type: "POST",
-	  url: "http://requestb.in/1au79rm1",
+	  url: "https://requestb.in/1au79rm1",
 	  data: gameData
 	});
 }
