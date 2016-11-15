@@ -8,6 +8,10 @@ $('.btnUseWord').click(function() {
 	checkWord(word);
 });
 
+$('.btnSkipWord').click(function() {
+	checkWord("",true);
+});
+
 $('.btnPlayAgain').click(function() {
 	restartGame();
 });
@@ -54,8 +58,13 @@ function clearCorrectionFlag() {
 	drawViews();
 }
 
-function checkWord(word) {
-	if (word.length < 1) {
+function checkWord(word, skip) {
+	if (skip == undefined) {
+		skip = false;
+	} else {
+		word = "Word Skipped";
+	}
+	if (word.length < 1 && !skip) {
 		alertify.error("Please enter the answer first");
 		return;
 	}
@@ -63,13 +72,15 @@ function checkWord(word) {
 
 	var isCorrect = false;
 	var rslt = null;
-	var answers = gameData.source.words[gameData.gameStep].answers;
-	$.each(answers, function(index, value) { 
-		if (rslt == null && value.toLowerCase() === word.toLowerCase()) {
-			rslt = index;
-			isCorrect = true;
-		}
-	});
+	if (!skip) {
+		var answers = gameData.source.words[gameData.gameStep].answers;
+		$.each(answers, function(index, value) { 
+			if (rslt == null && value.toLowerCase() === word.toLowerCase()) {
+				rslt = index;
+				isCorrect = true;
+			}
+		});
+	}
 	
 	gameData.source.words[gameData.gameStep].tries = gameData.tryCount;
 	if (isCorrect) {
@@ -83,7 +94,8 @@ function checkWord(word) {
 		if (gameData.source.words[gameData.gameStep].wrongGiven == undefined)
 			gameData.source.words[gameData.gameStep].wrongGiven = [];
 		gameData.source.words[gameData.gameStep].wrongGiven.push(word);
-		if (gameData.tryCount >= 3){
+		gameData.source.words[gameData.gameStep].score = 0;
+		if (gameData.tryCount >= 3 || skip){
 			var msg = "<img src='https://media.giphy.com/media/l3vQYxsyauUub9oJi/giphy.gif' width='200px'><h3>Out of Luck</h3><p>Review the correct answer</p>";
 			alertify.delay(8000).error(msg);
 			gameData.gameStep++;
@@ -120,23 +132,28 @@ function enrichWordListWithHints(words) {
 			var first = 0;
 			var last = letterCount - 1;
 			//hint = answer[first] + " " + Array(letterCount - 1).join("_ ") + answer[last];
-			var lastReveal = 0;
+			var lastReveal = 1000;
 			for (var i = 0; i < letterCount; i++) {
-				if (i == 0 || i >= (letterCount - 1)) {
-					hint += answer[i];
-				} else {
-					var max = 1;
-					if (lastReveal < hintDifficulty) {
-						max = hintDifficulty - lastReveal;
+				// if (i == 0 || i >= (letterCount - 1)) {
+				// 	hint += answer[i];
+				// } else {
+					var min = 1, max = 1;
+					if (lastReveal == 0) {
+						min = 0;
+						max = 0;
+					} else {
+						if (lastReveal < hintDifficulty) {
+							max = hintDifficulty - lastReveal;
+						}
 					}
-					if (max == 1 || getRandomInt(1, max) == 1) {
+					if (max == 1 || getRandomInt(min, max) == 1) {
 						hint += answer[i];
 						lastReveal = 0;
 					} else {
 						hint += "_";
 						lastReveal++;
 					}
-				}
+				//}
 			}
 		}
 		value.hint = hint;
@@ -219,6 +236,9 @@ function drawViews(){
 	if (gameData == undefined || gameData.playerName == "")
 	{
 		$('#loginName').val("");
+		$("#lblWelcomeTitle").text(gAppConfig.welcomeTitle);
+		$("#navbarTitle").text(gAppConfig.title);
+		$("#imgWelcomeImage").attr("src",gAppConfig.welcomeImage);
 		$(".loginView").show();
 		$('#loginName').focus();
 	}
@@ -261,6 +281,7 @@ function drawViews(){
 					$("#retriesLeft").text(3 - gameData.tryCount);
 					$('#inputWord').val("");
 					$("#lblHintWord").text(gameData.source.words[gameData.gameStep].hint);
+					$("#lblHintCategory").text(gameData.source.words[gameData.gameStep].category);
 					$(".playView").show();
 					$('#inputWord').focus();
 				}
@@ -320,7 +341,7 @@ $(window).on("load", function() {
 
 // HTML builder functions
 
-function buildNumberedHtmlList() {
+function buildNumberedHtmlList(arr) {
 	var html = "";
 	var counter = 1;
 	$.each(arr, function(index, value) { 

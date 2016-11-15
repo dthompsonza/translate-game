@@ -3,7 +3,7 @@
   "versionDate": "2016/11/15 11:49",
   "name": "isiZulu to English",
   "type": 1,
-  "wordCount": 3,
+  "wordCount": 5,
   "hint": true,
   "words": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "word": "Kuyabanda",
-      "category": "General",
+      "category": "Weather",
       "answers": [
         "It is cold",
         "cold",
@@ -34,7 +34,7 @@
     },
     {
       "word": "Ibanga",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Grade"
       ]
@@ -48,7 +48,7 @@
     },
     {
       "word": "Izulu linomoya",
-      "category": "General",
+      "category": "Weather",
       "answers": [
         "It is windy",
         "Its windy",
@@ -81,14 +81,14 @@
     },
     {
       "word": "Igama",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Name"
       ]
     },
     {
       "word": "Umugqa",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Line"
       ]
@@ -125,7 +125,7 @@
     },
     {
       "word": "Isibongo",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Surname",
         "Last name",
@@ -148,7 +148,7 @@
     },
     {
       "word": "Kuyashisa",
-      "category": "General",
+      "category": "Weather",
       "answers": [
         "It is hot",
         "hot",
@@ -182,14 +182,14 @@
     },
     {
       "word": "Phendula",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Answer"
       ]
     },
     {
       "word": "Sithombe",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Picture"
       ]
@@ -203,7 +203,7 @@
     },
     {
       "word": "Lyana",
-      "category": "General",
+      "category": "Weather",
       "answers": [
         "It is raining",
         "Its raining",
@@ -222,7 +222,7 @@
     },
     {
       "word": "Ksasa",
-      "category": "General",
+      "category": "Periods",
       "answers": [
         "Tomorrow"
       ]
@@ -243,7 +243,7 @@
     },
     {
       "word": "Umama",
-      "category": "People",
+      "category": "About People & Things",
       "answers": [
         "Mother",
         "Mom",
@@ -253,7 +253,7 @@
     },
     {
       "word": "Amagama",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Words"
       ]
@@ -276,7 +276,7 @@
     },
     {
       "word": "Namhlanje",
-      "category": "General",
+      "category": "Periods",
       "answers": [
         "Today"
       ]
@@ -290,14 +290,14 @@
     },
     {
       "word": "Thisha",
-      "category": "People",
+      "category": "About People & Things",
       "answers": [
         "Teacher"
       ]
     },
     {
       "word": "Ubaba",
-      "category": "People",
+      "category": "About People & Things",
       "answers": [
         "Father",
         "Pa",
@@ -306,7 +306,7 @@
     },
     {
       "word": "Ngithanda",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "I Like",
         "Like"
@@ -328,7 +328,7 @@
     },
     {
       "word": "Izolo",
-      "category": "General",
+      "category": "Periods",
       "answers": [
         "Yesterday"
       ]
@@ -342,14 +342,14 @@
     },
     {
       "word": "Mbuzo",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Question"
       ]
     },
     {
       "word": "Izinksuku",
-      "category": "General",
+      "category": "Periods",
       "answers": [
         "Days"
       ]
@@ -392,7 +392,7 @@
     },
     {
       "word": "Sawubona",
-      "category": "General",
+      "category": "About People & Things",
       "answers": [
         "Hello",
         "Hi",
@@ -444,7 +444,7 @@
     },
     {
       "word": "Umfundi",
-      "category": "People",
+      "category": "About People & Things",
       "answers": [
         "Learner",
         "Student",
@@ -496,7 +496,7 @@
     },
     {
       "word": "Sami/Lami",
-      "category": "People",
+      "category": "About People & Things",
       "answers": [
         "Me"
       ]
@@ -823,7 +823,9 @@
       "word": "Ummbila",
       "category": "Food",
       "answers": [
-        "Mealie"
+        "Mealie",
+        "Maize",
+        "Corn"
       ]
     },
     {
