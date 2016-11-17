@@ -1,0 +1,12 @@
+{
+  "title": "Word Games",
+  "welcomeTitle": "Hello, whats your name?",
+  "welcomeImage": "https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif",
+  "welcomeText": "",
+  "games": [
+    {
+      "name": "isiZulu to English - Enter Word",
+      "data": "https://api.myjson.com/bins/4kid8"
+    }
+  ]
+}
