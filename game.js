@@ -82,6 +82,7 @@ function checkWord(word, skip) {
 		});
 	}
 	
+	var startGameStep = gameData.gameStep;
 	gameData.source.words[gameData.gameStep].tries = gameData.tryCount;
 	if (isCorrect) {
 		var msg = "<img src='https://media.giphy.com/media/3oz8xPjPPvOwrGjip2/giphy.gif' width='200px'><h3>Correct</h3><p>Well done !</p>";
@@ -105,6 +106,21 @@ function checkWord(word, skip) {
 			var msg = "<img src='https://media.giphy.com/media/l0HlIkUigWdQLaWju/giphy.gif' width='200px'><h3>Wrong</h3><p>" + word + " is wrong, try again</p>";
 			alertify.delay(5000).error(msg);
 		}
+	}
+
+	if (localStorage.plays == undefined)
+	{
+		localStorage.plays = [];
+	}
+
+
+	if (startGameStep < gameData.gameStep) {
+		var play = {
+			player : gameData.playerName,
+			wordPlayed : gameData.source.words[startGameStep],
+			date : new Date().toLocaleTimeString()
+		}
+		//localStorage.plays.push(play);
 	}
 
 	drawViews();
