@@ -14,6 +14,28 @@
 		<xlink href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 		<xlink href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
 		<xlink href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<script>
+			function getParameterByName(name, url) {
+			    if (!url) {
+			      url = window.location.href;
+			    }
+			    name = name.replace(/[\[\]]/g, "\\$&");
+			    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			        results = regex.exec(url);
+			    if (!results) return null;
+			    if (!results[2]) return '';
+			    return decodeURIComponent(results[2].replace(/\+/g, " "));
+			}
+
+			function getCurrentTimestamp() {
+				var d = new Date(); 
+				return d.getMonth() + "-" + d.getFullYear() + "-" + d.getDay();
+			}
+
+			if (getParameterByName("r") == undefined || getParameterByName('r') != getCurrentTimestamp()) {
+				window.location = "?r=" + getCurrentTimestamp();
+			}
+		</script>
 		<style>
 			body {
 				padding-top: 20px;
