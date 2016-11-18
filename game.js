@@ -248,6 +248,8 @@ function drawViews(){
 	$(".playView").hide();
 	$(".resultView").hide();
 	$(".correctWordView").hide();
+	$("#resultWinGraphic").hide();
+	$("#resultLoseGraphic").hide();
 
 	if (gameData == undefined || gameData.playerName == "")
 	{
